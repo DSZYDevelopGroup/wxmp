@@ -1,0 +1,13 @@
+<view class='page all' style='height:{{screenHeight}}rpx'>
+  <view class='head'>
+  <icon type='success' size='130'></icon>
+  <text>客户退款成功</text>
+  </view>
+  <view class='body'>
+  <text>原订单号：{{order_id}}</text>
+  <text>退款单号：{{reject_no}}</text>
+  <text>退款金额：{{reject_amt}}</text>
+  <text>退款时间：{{reject_time}}</text>
+  </view>
+  <button class='btn' type='primary' bindtap='backToIndex'>确认</button>
+</view>

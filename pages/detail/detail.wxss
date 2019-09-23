@@ -1,0 +1,41 @@
+/* pages/detail/detail.wxss */
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:center;
+  padding-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+.picker{
+  font-size: 35rpx;
+  padding-bottom:5rpx;
+  border-bottom:2rpx solid #000
+}
+.btn {
+  line-height: 60rpx;
+  width:25%;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  padding-bottom:5rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border-bottom:2rpx solid #000;
+}
+.yuan{
+  height:80rpx;
+  width:80rpx;
+  position: relative;
+  top:15rpx;
+  padding-right: 15rpx;
+}
+.time{
+  flex:2;
+}
+.amt{
+  flex:2;
+  text-align: right;
+}

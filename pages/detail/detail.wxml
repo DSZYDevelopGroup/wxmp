@@ -1,0 +1,24 @@
+<wxs src="../../utils/amt.wxs" module="tool" />
+<view class='page all' style='height:{{screenHeight}}rpx'>
+  <view class="section">
+    <picker data-name="startDate" mode="date" value="{{dateS}}" start="1990-01-01" end="{{dateE}}" bindchange="bindDateChange">
+      <view class="picker">
+        {{dateS}}
+      </view>
+    </picker>
+    <text>——</text>
+      <picker data-name="endDate" mode="date" value="{{dateE}}" start="1990-01-01" end="{{dateE}}" bindchange="bindDateChange">
+      <view class="picker">
+        {{dateE}}
+      </view>
+    </picker>
+  </view>
+  <button class="btn" type="primary" bindtap="getDetails">查询</button>
+  <view class="list"  wx:for="{{detailsList}}" wx:key="ID" wx:for-item="itemName" data-index="{{itemName}}" bindtap="toInfo">
+  <image class="yuan" src="../../icons/yuan.png"></image>
+  <view class="time">
+    <view>{{itemName.order_time}}</view>
+  </view>
+  <view class="amt">{{tool.amt(itemName.total_amt)}}</view>
+  </view>
+</view>

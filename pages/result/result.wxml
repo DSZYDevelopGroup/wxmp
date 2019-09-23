@@ -1,0 +1,13 @@
+<!--pages/result/result.wxml-->
+<view class='page all' style='height:{{screenHeight}}rpx'>
+  <view class='head'>
+  <icon type='success' size='130'></icon>
+  <text>客户支付成功</text>
+  </view>
+  <view class='body'>
+  <text>订单号：{{order_id}}</text>
+  <text>订单金额：{{order_amt}}</text>
+  <text>支付时间：{{order_time}}</text>
+  </view>
+  <button class='btn' type='primary' bindtap='backToIndex'>确认</button>
+</view>

@@ -1,0 +1,52 @@
+.body{
+  display: flex;
+  flex-direction: column;
+}
+.ad{
+  margin-top: 25rpx;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 25rpx;
+}
+.placeholder{
+    margin: 5.5rpx;
+    padding: 0 10rpx;
+    text-align: center;
+    /* background-color: #ff0000; */
+    width: 375rpx;
+    height: 175rpx;
+    line-height: 175rpx;
+    color: #fff;
+    border-radius: 20rpx;
+}
+image{
+  margin:10rpx;
+  border-radius: 20rpx;
+}
+.userinfo {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-image: url("https://jymanager.appchizi.com/icbc/img/userinfobk.jpg");
+background-size: cover;
+height:300rpx
+}
+.userinfo button{
+  border-radius: 10rpx;
+}
+
+.userinfo-avatar {
+width: 128rpx;
+height: 128rpx;
+margin: 20rpx;
+border-radius: 50%;
+border: 5rpx solid rgba(167, 109, 109, 0.781)
+}
+
+.userinfo-nickname {
+color: rgb(131, 127, 127);
+}

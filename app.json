@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/showcode/showcode",
+    "pages/failure/failure",
+    "pages/result/result",
+    "pages/detail/detail",
+    "pages/mine/mine",
+    "pages/info/info",
+    "pages/rejectresult/rejectresult"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "JY商户管家",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#ECECEC"
+    
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "icons/homepage.png",
+        "selectedIconPath": "icons/homepage_fill.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icons/mine.png",
+        "selectedIconPath": "icons/mine_fill.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

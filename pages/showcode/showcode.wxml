@@ -1,0 +1,21 @@
+<!--pages/showcode/showcode.wxml-->
+<view class='page all' style='height:{{screenHeight}}rpx'>
+  <view class='body'>
+  <text class='description'>请输入收款金额</text>
+  <form bindsubmit='formSubmit'>
+  <view class='amtInput'>
+  <text>金额:</text>
+  <text wx:if="{{isShow}}">￥</text>
+  <input name='amt' type='digit' placeholder='￥0.00' value='{{price}}' bindinput='inputs'></input>
+  </view>
+  <view class='btnArea'>
+  <button type='primary' form-type='submit' data-type='generate'>生成二维码</button>
+  <button type='primary' form-type='submit' data-type='scan' >扫描二维码</button>
+  </view>
+  </form>
+  <view class='qrCode'>
+  <image mode="widthFix" src="{{base64ImgUrl}}"></image>
+  </view>
+  </view>
+</view>
+

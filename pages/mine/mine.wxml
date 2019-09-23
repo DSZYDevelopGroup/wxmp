@@ -1,0 +1,17 @@
+<!--pages/mine/mine.wxml-->
+<view class="page all" style='height:{{windowHeight}}rpx'>
+  <form wx:if='{{msg_code==0}}' bindsubmit='formSubmit'>
+  <text>商户信息</text>
+    <view class='mer_idInput'>
+    <input name='mer_id' type='number' placeholder='输入特约商户编码绑定'  maxlength="12"></input>
+    </view>
+    <view class='btnArea'>
+    <button type='primary' form-type='submit'>绑定</button>
+    </view>
+  </form>
+  <view class="merinfo" wx:elif='{{msg_code==1}}' >
+    <view class="merdetail">商户名称：{{store_name}}</view>
+    <view class="merdetail">商户档案编号：{{mer_id}}</view>
+    <view class="merdetail">e生活档案编号：{{store_code}}</view>
+  </view>
+</view>

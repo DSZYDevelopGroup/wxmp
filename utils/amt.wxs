@@ -1,0 +1,12 @@
+var amt = function(res){
+  if(res==0){
+    return '￥0.00';
+  }
+  else{
+    var str=(res/100).toFixed(2);
+    return '￥'+str;
+  }
+}
+module.exports={
+  amt:amt
+}

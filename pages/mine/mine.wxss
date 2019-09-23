@@ -1,0 +1,15 @@
+/* pages/mine/mine.wxss */
+.merinfo{
+  position:relative;
+  top: 350rpx;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  font-size: 35rpx;
+  justify-content: center;
+}
+.merdetail{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  text-align: center;
+}
